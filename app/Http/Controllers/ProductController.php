@@ -58,4 +58,14 @@ class ProductController extends Controller
         Product::create($request->only(["name","price"]));
         return back();
     }
+
+    public function success(): View
+    {
+        $viewData = [];
+        $viewData["title"] = "Product Created - Online Store";
+        $viewData["subtitle"] = "Success";
+        $viewData["message"] = "Your product has been created successfully.";
+
+        return view('product.success')->with('viewData', $viewData);
+    }
 }
