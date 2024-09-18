@@ -1,7 +1,7 @@
 @extends('layouts.app')
-@section('title','Home Page - Online Store')
+@section('title','Home Page - Fishes Info')
 @section('content')
 <div class="text-center">
-    Welcome to the application
+    <h5>¡Welcome to "OUR FISHES INFO BASE"!</h5>
 </div>
 @endsection
